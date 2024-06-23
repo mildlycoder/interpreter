@@ -8,11 +8,28 @@ type token struct {
 }
 
 const (
-  ILLEGAL="ILLEGAL"
-  EOF="EOF"
+	// Special tokens
+	MARINE = "MARINE" // ILLEGAL
+	REDLINE = "REDLINE" // EOF
 
-  //IDENTIFIER + LITERALS 
+	// Identifiers + literals
+	IDENT = "IDENT" // add, foobar, x, y, ...
+	INT   = "INT"   // 1343456
 
+	// Operators
+	ASSIGN = "="
+	PLUS   = "+"
 
+	// Delimiters
+	COMMA     = ","
+	SEMICOLON = ";"
+	LPAREN    = "("
+	RPAREN    = ")"
+	LBRACE    = "{"
+	RBRACE    = "}"
 
+	// Keywords
+	DEVILFRUIT = "DEVILFRUIT" // FUNCTION
+	TREASURE   = "TREASURE"   // LET
 )
+
